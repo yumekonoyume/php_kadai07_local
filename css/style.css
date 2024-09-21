@@ -1,0 +1,173 @@
+/* 全体の設定 */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4; /* 柔らかいグレーの背景 */
+    color: #333; /* テキストカラーはダークグレー */
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #3b5323; /* ダークグリーン */
+    color: white;
+    padding: 10px 0;
+}
+
+/* navbarのスタイル */
+.navbar {
+    background-color: #3b5323; /* ダークグリーン */
+    border: none; /* ボーダーを取り除いてすっきり */
+}
+
+.navbar-header .navbar-brand {
+    color: white; /* ロゴの色を白に */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-header .navbar-brand:hover {
+    color: #d1e7dd; /* ホバー時に淡いグリーンに */
+}
+
+/* フォーム全体のスタイル */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px; /* 柔らかな角丸 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽い影で立体感 */
+}
+
+/* フィールドセットのスタイル */
+fieldset {
+    border: none;
+}
+
+/* ラベルとインプットのスタイル */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #3b5323; /* 優しいダークグリーン */
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* 丸みをつけて柔らかい印象に */
+    font-size: 1em;
+}
+
+textarea {
+    resize: none; /* テキストエリアのサイズ変更を無効に */
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+/* 送信ボタンのスタイル */
+input[type="submit"] {
+    background-color: #3b5323; /* グリーン */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #4d7041; /* マウスオーバーで少し明るく */
+}
+
+/* jumbotronのスタイル */
+.jumbotron {
+    background-color: #ffffff; /* 白背景 */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0; /* 柔らかいグレーの枠線 */
+}
+
+/* カード形式の口コミスタイル */
+.review-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.review-card img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.review-details {
+    flex-grow: 1;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.review-header p {
+    margin: 0;
+    color: #555;
+}
+
+.review-score {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #f39c12;
+}
+
+.review-comment {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.review-footer {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #999;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .review-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form {
+        padding: 15px;
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
